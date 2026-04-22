@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shafaq Hussain & Obaydul Kabir — Your Party, Small Heath 2026</title>
+<meta name="description" content="Vote Shafaq Hussain and Obaydul Kabir on 7 May 2026. Your Party candidates for Small Heath ward. Real change for Birmingham.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream: #F9F7E8;
+  --red: #D42B2B;
+  --red-dark: #A81E1E;
+  --red-light: #F0CCCC;
+  --cream-dark: #EDE9C8;
+  --cream-darker: #D6D0A0;
+  --text-dark: #1A1A1A;
+  --white: #FFFFFF;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text-dark); overflow-x: hidden; }
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+  background: var(--red);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 2.5rem; height: 62px;
+  border-bottom: 3px solid var(--red-dark);
+}
+.nav-logo {
+  font-family: 'Fraunces', serif; color: var(--cream);
+  font-size: 1.4rem; font-weight: 900; text-decoration: none; letter-spacing: -0.5px;
+}
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+  color: rgba(249,247,232,0.85); text-decoration: none; font-size: 0.82rem;
+  font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--cream); }
+.nav-cta {
+  background: var(--cream); color: var(--red); padding: 8px 20px;
+  font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.08em; text-decoration: none; transition: opacity 0.2s;
+}
+.nav-cta:hover { opacity: 0.85; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.hamburger span { width: 24px; height: 2px; background: var(--cream); display: block; }
+
+/* HERO */
+.hero {
+  min-height: 100vh; padding-top: 62px;
+  background: var(--cream);
+  display: grid; grid-template-columns: 1fr 1fr;
+  position: relative; overflow: hidden;
+}
+.hero-left {
+  padding: 5rem 3rem 4rem 4rem;
+  display: flex; flex-direction: column; justify-content: center;
+  position: relative; z-index: 2;
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  margin-bottom: 2rem;
+}
+.eyebrow-dot { width: 10px; height: 10px; background: var(--red); border-radius: 50%; }
+.eyebrow-text {
+  font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.15em; color: var(--red);
+}
+.hero-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(3rem, 5.5vw, 5rem); font-weight: 900; line-height: 0.95;
+  color: var(--red); margin-bottom: 1.75rem; letter-spacing: -2px;
+}
+.hero-title em { font-style: italic; color: var(--red-dark); }
+.hero-date {
+  display: inline-block;
+  background: var(--red); color: var(--cream);
+  font-size: 1rem; font-weight: 700; padding: 10px 20px;
+  letter-spacing: 0.04em; margin-bottom: 1.5rem;
+}
+.hero-sub {
+  font-size: 1rem; color: var(--text-dark); line-height: 1.75;
+  max-width: 420px; margin-bottom: 2.5rem; font-weight: 500;
+}
+.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn-red {
+  background: var(--red); color: var(--cream); padding: 15px 34px;
+  font-size: 0.88rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.08em; text-decoration: none; display: inline-block;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-red:hover { background: var(--red-dark); transform: translateY(-2px); }
+.btn-outline {
+  border: 2.5px solid var(--red); color: var(--red); padding: 15px 34px;
+  font-size: 0.88rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.08em; text-decoration: none; display: inline-block;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+.btn-outline:hover { background: var(--red); color: var(--cream); transform: translateY(-2px); }
+
+.hero-right {
+  background: var(--red); position: relative; overflow: hidden;
+  display: flex; align-items: flex-end; justify-content: center;
+  padding-bottom: 0; min-height: 100vh;
+}
+.hero-bg-word {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+  font-family: 'Fraunces', serif; font-size: 14vw; font-weight: 900;
+  color: rgba(249,247,232,0.07); white-space: nowrap; pointer-events: none;
+  user-select: none; letter-spacing: -8px;
+}
+.hero-portraits {
+  display: flex; gap: 0; align-items: flex-end;
+  width: 100%; justify-content: center; position: relative; z-index: 2;
+}
+.hero-portrait {
+  flex: 1; text-align: center; position: relative;
+}
+.hero-portrait-img-wrap {
+  width: 100%; overflow: hidden;
+  display: flex; align-items: flex-end; justify-content: center;
+  height: 420px;
+}
+.hero-portrait-img-wrap img {
+  width: 100%; height: 420px;
+  object-fit: cover; object-position: top center;
+  display: block;
+  filter: saturate(1.05) contrast(1.02);
+}
+.hero-portrait-label {
+  background: var(--cream); padding: 14px 16px; text-align: left;
+}
+.hero-portrait-name {
+  font-family: 'Fraunces', serif;
+  color: var(--red); font-size: 1.1rem; font-weight: 900; line-height: 1.1;
+}
+.hero-portrait-role {
+  color: var(--red-dark); font-size: 0.72rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px;
+}
+
+/* TICKER */
+.ticker-wrap {
+  background: var(--cream-dark); overflow: hidden; padding: 12px 0;
+  border-top: 2px solid var(--red); border-bottom: 2px solid var(--red);
+}
+.ticker {
+  display: flex; animation: ticker 35s linear infinite; width: max-content;
+}
+.ticker span {
+  color: var(--red); font-size: 0.78rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.12em; padding: 0 2.5rem;
+  white-space: nowrap; font-family: 'DM Sans', sans-serif;
+}
+.ticker span::before { content: "✦  "; }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* SECTION BASE */
+section { padding: 6rem 2rem; }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+.section-kicker {
+  font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.18em; color: var(--red); margin-bottom: 1rem;
+  display: flex; align-items: center; gap: 10px;
+}
+.section-kicker::before { content: ""; display: block; width: 28px; height: 2px; background: var(--red); }
+.section-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 900;
+  color: var(--red); line-height: 1.05; margin-bottom: 3rem;
+  letter-spacing: -1px;
+}
+
+/* CANDIDATES */
+#candidates { background: var(--cream-dark); }
+.candidates-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+}
+.candidate-card {
+  background: var(--white); border-top: 5px solid var(--red);
+  overflow: hidden; transition: transform 0.25s;
+}
+.candidate-card:hover { transform: translateY(-5px); }
+.candidate-photo {
+  width: 100%; height: 320px; object-fit: cover; object-position: top center;
+  display: block; filter: saturate(1.05);
+}
+.candidate-body { padding: 1.75rem 2rem; }
+.candidate-name {
+  font-family: 'Fraunces', serif;
+  font-size: 1.8rem; font-weight: 900; color: var(--red); margin-bottom: 4px;
+}
+.candidate-tag {
+  font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--red-dark); margin-bottom: 1.25rem;
+}
+.candidate-bio {
+  font-size: 0.92rem; line-height: 1.8; color: var(--text-dark); margin-bottom: 1.5rem;
+}
+.candidate-fact {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 0.82rem; color: var(--text-dark); margin-bottom: 0.5rem; font-weight: 500;
+}
+.candidate-fact-icon { font-size: 1rem; }
+
+/* PLEDGES */
+#pledges { background: var(--cream); }
+.pledges-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px;
+  background: var(--cream-darker);
+  border: 1px solid var(--cream-darker);
+}
+.pledge-item {
+  background: var(--cream); padding: 1.75rem; display: flex; align-items: flex-start;
+  gap: 1.25rem; opacity: 0; transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.pledge-item.visible { opacity: 1; transform: none; }
+.pledge-num {
+  font-family: 'Fraunces', serif; font-size: 2.5rem; font-weight: 900;
+  color: var(--cream-darker); line-height: 1; min-width: 52px;
+}
+.pledge-text {
+  font-size: 0.97rem; line-height: 1.55; font-weight: 600; color: var(--text-dark);
+  padding-top: 6px;
+}
+
+/* WHY */
+#why { background: var(--text-dark); }
+#why .section-kicker { color: var(--cream-dark); }
+#why .section-kicker::before { background: var(--cream-dark); }
+#why .section-title { color: var(--cream); }
+.why-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;
+}
+.why-card {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  padding: 2rem; opacity: 0; transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.why-card.visible { opacity: 1; transform: none; }
+.why-card-icon { font-size: 2rem; margin-bottom: 1rem; }
+.why-card-title {
+  font-family: 'Fraunces', serif; font-size: 1.35rem; font-weight: 900;
+  color: var(--cream); margin-bottom: 0.75rem;
+}
+.why-card-text {
+  font-size: 0.9rem; line-height: 1.7; color: rgba(249,247,232,0.75);
+}
+
+/* VIDEOS */
+#videos { background: var(--cream-dark); }
+.tiktok-section-note {
+  font-size: 0.9rem; color: var(--text-dark); margin-bottom: 2rem;
+  max-width: 600px; line-height: 1.6;
+}
+.video-slider-wrap { position: relative; }
+.video-slider {
+  display: flex; gap: 1.5rem; overflow-x: auto;
+  scroll-snap-type: x mandatory; scroll-behavior: smooth;
+  padding-bottom: 1.25rem; -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin; scrollbar-color: var(--red) var(--cream-darker);
+}
+.video-slider::-webkit-scrollbar { height: 5px; }
+.video-slider::-webkit-scrollbar-track { background: var(--cream-darker); border-radius: 3px; }
+.video-slider::-webkit-scrollbar-thumb { background: var(--red); border-radius: 3px; }
+.video-slide {
+  min-width: 300px; max-width: 300px; height: 533px; scroll-snap-align: start;
+  background: #000; overflow: hidden; flex-shrink: 0;
+  position: relative; cursor: pointer;
+}
+.video-slide video {
+  width: 300px; height: 533px; object-fit: cover; display: block;
+}
+.video-slide-overlay {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 55%);
+  padding: 1rem; pointer-events: none;
+}
+.video-slide-title { color: white; font-size: 0.82rem; font-weight: 700; line-height: 1.4; }
+.video-slide-tag { color: rgba(255,255,255,0.55); font-size: 0.72rem; margin-top: 3px; }
+.video-play-btn {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+  width: 54px; height: 54px; background: rgba(255,255,255,0.18);
+  border-radius: 50%; border: 2px solid rgba(255,255,255,0.65);
+  display: flex; align-items: center; justify-content: center;
+  pointer-events: none; transition: opacity 0.25s;
+}
+.video-slide.playing .video-play-btn { opacity: 0; }
+.video-play-btn svg { width: 22px; height: 22px; fill: white; margin-left: 3px; }
+.video-placeholder {
+  min-width: 300px; max-width: 300px; height: 533px; scroll-snap-align: start;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  flex-shrink: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 1rem; text-align: center; padding: 2rem;
+}
+.video-placeholder svg { width: 52px; height: 52px; fill: rgba(255,255,255,0.25); }
+.video-placeholder p { color: rgba(255,255,255,0.5); font-size: 0.82rem; line-height: 1.6; }
+.video-placeholder a {
+  background: var(--red); color: white; padding: 10px 22px;
+  text-decoration: none; font-weight: 700; font-size: 0.78rem;
+  letter-spacing: 0.06em; text-transform: uppercase; transition: background 0.2s;
+}
+.video-placeholder a:hover { background: var(--red-dark); }
+.slider-nav {
+  display: flex; gap: 0.75rem; margin-top: 1.5rem; align-items: center;
+}
+.slider-btn {
+  width: 44px; height: 44px; background: var(--red); color: var(--cream);
+  border: none; cursor: pointer; font-size: 1.2rem; display: flex;
+  align-items: center; justify-content: center;
+  transition: background 0.2s; font-family: inherit;
+}
+.slider-btn:hover { background: var(--red-dark); }
+.slider-dots { display: flex; gap: 6px; margin-left: 4px; }
+.slider-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--cream-darker); transition: background 0.2s; cursor: pointer;
+}
+.slider-dot.active { background: var(--red); }
+.tiktok-cta {
+  margin-top: 2rem; display: inline-flex; align-items: center; gap: 10px;
+  background: #010101; color: white; padding: 14px 24px;
+  text-decoration: none; font-weight: 700; font-size: 0.88rem;
+  letter-spacing: 0.06em; text-transform: uppercase; transition: opacity 0.2s;
+}
+.tiktok-cta:hover { opacity: 0.85; }
+.tiktok-cta svg { width: 22px; height: 22px; }
+
+/* CONTACT */
+#contact { background: var(--red); }
+#contact .section-kicker { color: rgba(249,247,232,0.7); }
+#contact .section-kicker::before { background: rgba(249,247,232,0.5); }
+#contact .section-title { color: var(--cream); }
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1.3fr; gap: 4rem;
+}
+.contact-person { margin-bottom: 2rem; }
+.contact-person-name {
+  font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 900;
+  color: var(--cream); margin-bottom: 0.75rem;
+}
+.contact-detail {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 0.6rem;
+}
+.contact-detail a {
+  color: rgba(249,247,232,0.85); text-decoration: none; font-size: 0.9rem;
+  transition: color 0.2s;
+}
+.contact-detail a:hover { color: var(--cream); }
+.contact-icon-wrap { font-size: 1.1rem; }
+.contact-divider { border: none; border-top: 1px solid rgba(249,247,232,0.2); margin: 1.5rem 0; }
+.contact-address {
+  font-size: 0.85rem; line-height: 1.8; color: rgba(249,247,232,0.65);
+}
+
+/* WA FORM */
+.wa-form-intro {
+  font-size: 0.9rem; color: rgba(249,247,232,0.75); margin-bottom: 1.5rem; line-height: 1.6;
+}
+.wa-form-intro strong { color: var(--cream); }
+.form-group { margin-bottom: 1.1rem; }
+.form-input, .form-textarea {
+  width: 100%; background: rgba(255,255,255,0.1); border: 1px solid rgba(249,247,232,0.25);
+  color: var(--cream); font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+  padding: 12px 16px; outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+.form-input::placeholder, .form-textarea::placeholder { color: rgba(249,247,232,0.4); }
+.form-input:focus, .form-textarea:focus {
+  border-color: var(--cream); background: rgba(255,255,255,0.15);
+}
+.form-textarea { min-height: 130px; resize: vertical; }
+.form-select {
+  width: 100%; background: rgba(255,255,255,0.1); border: 1px solid rgba(249,247,232,0.25);
+  color: var(--cream); font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+  padding: 12px 16px; outline: none; cursor: pointer;
+  -webkit-appearance: none; appearance: none;
+}
+.form-select option { background: var(--red-dark); color: var(--cream); }
+.form-submit-wa {
+  width: 100%; padding: 16px; background: #25D366; color: white;
+  border: none; font-family: 'DM Sans', sans-serif; font-size: 0.95rem;
+  font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  gap: 10px; transition: background 0.2s, transform 0.15s;
+}
+.form-submit-wa:hover { background: #1ebe5d; transform: translateY(-2px); }
+.form-submit-wa svg { width: 22px; height: 22px; }
+
+/* FOOTER */
+footer {
+  background: var(--text-dark); padding: 3rem 2rem; text-align: center;
+}
+.footer-logo {
+  font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 900;
+  color: var(--cream); letter-spacing: -1px; margin-bottom: 1rem;
+}
+.footer-links {
+  display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.footer-links a {
+  color: rgba(249,247,232,0.5); text-decoration: none; font-size: 0.78rem;
+  font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--cream); }
+.footer-legal {
+  font-size: 0.75rem; color: rgba(249,247,232,0.35); line-height: 1.7;
+}
+.footer-vote {
+  margin-top: 2rem; font-family: 'Fraunces', serif;
+  font-size: 1.5rem; font-weight: 900; color: var(--red);
+  letter-spacing: -0.5px;
+}
+
+/* WHATSAPP FLOAT */
+.wa-float {
+  position: fixed; bottom: 28px; right: 28px; z-index: 9999;
+  width: 62px; height: 62px; background: #25D366;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+  text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+  animation: waFloat 3s ease-in-out infinite;
+}
+.wa-float:hover {
+  transform: scale(1.12);
+  box-shadow: 0 10px 32px rgba(37,211,102,0.6);
+}
+.wa-float svg { width: 34px; height: 34px; fill: white; }
+@keyframes waFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.wa-float:hover { animation: none; }
+
+/* REVEAL */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s; }
+.reveal.visible { opacity: 1; transform: none; }
+
+/* STATS BAR */
+.stats-bar {
+  background: var(--red); padding: 3rem 2rem;
+}
+.stats-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; text-align: center;
+}
+.stat-item {}
+.stat-num {
+  font-family: 'Fraunces', serif; font-size: 3rem; font-weight: 900;
+  color: var(--cream); line-height: 1; margin-bottom: 0.5rem;
+}
+.stat-label {
+  font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.1em; color: rgba(249,247,232,0.7);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { min-height: 60vh; }
+  .candidates-grid { grid-template-columns: 1fr; }
+  .pledges-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .stats-inner { grid-template-columns: repeat(2, 1fr); }
+  .hero-left { padding: 3rem 1.5rem; }
+  nav { padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+}
+@media (max-width: 480px) {
+  .tiktok-slide { min-width: 280px; max-width: 280px; }
+  .stats-inner { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Mobile Nav */
+.mobile-nav {
+  display: none; position: fixed; top: 62px; left: 0; right: 0;
+  background: var(--red-dark); z-index: 998; padding: 1.5rem;
+  flex-direction: column; gap: 1rem;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  color: var(--cream); text-decoration: none; font-size: 1rem;
+  font-weight: 600; padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(249,247,232,0.15);
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">Your Party</a>
+  <ul class="nav-links">
+    <li><a href="#candidates">Candidates</a></li>
+    <li><a href="#pledges">Pledges</a></li>
+    <li><a href="#why">Why Change</a></li>
+    <li><a href="#videos">Videos</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="#contact">Get Involved</a>
+  <div class="hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="#candidates" onclick="closeMobileNav()">Candidates</a>
+  <a href="#pledges" onclick="closeMobileNav()">Pledges</a>
+  <a href="#why" onclick="closeMobileNav()">Why Change</a>
+  <a href="#videos" onclick="closeMobileNav()">Videos</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <div class="eyebrow-dot"></div>
+      <div class="eyebrow-text">Small Heath Ward · Birmingham 2026</div>
+    </div>
+    <h1 class="hero-title">
+      Real<br><em>Change</em><br>is Here.
+    </h1>
+    <div class="hero-date">📅 Vote — 7 May 2026</div>
+    <p class="hero-sub">
+      Shafaq Hussain and Obaydul Kabir — lifelong Small Heath residents — are standing as Your Party candidates to end Labour's 14 years of neglect, waste and broken promises. Backed by Jeremy Corbyn's movement, they stand for communities, not billionaires.
+    </p>
+    <div class="hero-btns">
+      <a class="btn-red" href="#pledges">Our Pledges</a>
+      <a class="btn-outline" href="#contact">Join the Campaign</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-bg-word">CHANGE</div>
+    <div class="hero-portraits">
+      <div class="hero-portrait">
+        <div class="hero-portrait-img-wrap">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face" alt="Shafaq Hussain" onerror="this.src='https://via.placeholder.com/400x500/D42B2B/F9F7E8?text=Shafaq+Hussain'">
+        </div>
+        <div class="hero-portrait-label">
+          <div class="hero-portrait-name">Shafaq Hussain</div>
+          <div class="hero-portrait-role">Your Party · Small Heath</div>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <div class="hero-portrait-img-wrap">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&crop=face" alt="Obaydul Kabir" onerror="this.src='https://via.placeholder.com/400x500/A81E1E/F9F7E8?text=Obaydul+Kabir'">
+        </div>
+        <div class="hero-portrait-label">
+          <div class="hero-portrait-name">Obaydul Kabir</div>
+          <div class="hero-portrait-role">Your Party · Small Heath</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker">
+    <span>Vote 7 May 2026</span>
+    <span>End the Bin Strike</span>
+    <span>More School Funding</span>
+    <span>Reopen Small Heath Pool</span>
+    <span>Free Bus for Under 16s</span>
+    <span>Stop Fly-Tipping</span>
+    <span>Real Change for Small Heath</span>
+    <span>Your Party · Jeremy Corbyn</span>
+    <span>Ring-Fence Sports Quarter Jobs</span>
+    <span>Improve Health Services</span>
+    <span>Vote 7 May 2026</span>
+    <span>End the Bin Strike</span>
+    <span>More School Funding</span>
+    <span>Reopen Small Heath Pool</span>
+    <span>Free Bus for Under 16s</span>
+    <span>Stop Fly-Tipping</span>
+    <span>Real Change for Small Heath</span>
+    <span>Your Party · Jeremy Corbyn</span>
+    <span>Ring-Fence Sports Quarter Jobs</span>
+    <span>Improve Health Services</span>
+  </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-num">14</div>
+      <div class="stat-label">Years of Labour Neglect</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">£17m</div>
+      <div class="stat-label">Bin Strike Cost to Taxpayers</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">10yrs</div>
+      <div class="stat-label">Small Heath Pool Closed</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">16</div>
+      <div class="stat-label">Pledges for Our Community</div>
+    </div>
+  </div>
+</div>
+
+<!-- CANDIDATES -->
+<section id="candidates">
+  <div class="section-inner">
+    <div class="section-kicker">Your Candidates</div>
+    <h2 class="section-title">Two voices for Small Heath</h2>
+    <div class="candidates-grid">
+
+      <div class="candidate-card reveal">
+        <img class="candidate-photo"
+          src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=400&fit=crop&crop=face"
+          alt="Shafaq Hussain"
+          onerror="this.src='https://via.placeholder.com/600x320/D42B2B/F9F7E8?text=Shafaq+Hussain'">
+        <div class="candidate-body">
+          <div class="candidate-name">Shafaq Hussain</div>
+          <div class="candidate-tag">Your Party Candidate · Small Heath Ward 2026</div>
+          <p class="candidate-bio">
+            Having lived in Small Heath for most of his life, Shafaq has stood against years of Labour, Tory and Lib Dem cuts. An active campaigner for better inner city services, he has advocated on international issues including Kashmir, Palestine and against injustice wars. He brings deep knowledge and experience from public services as a team leader, FE college lecturer and currently as Senior Youth Officer in a West Midlands Local Authority.
+          </p>
+          <div class="candidate-fact">
+            <span class="candidate-fact-icon">📞</span>
+            <span class="candidate-fact-text"><a href="tel:07300918407" style="color:var(--red);text-decoration:none;font-weight:700;">07300 918 407</a></span>
+          </div>
+          <div class="candidate-fact">
+            <span class="candidate-fact-icon">🌐</span>
+            <span class="candidate-fact-text"><a href="https://www.shafaqhussain.vote" target="_blank" style="color:var(--red);text-decoration:none;font-weight:700;">www.shafaqhussain.vote</a></span>
+          </div>
+          <div class="candidate-fact">
+            <span class="candidate-fact-icon">✉️</span>
+            <span class="candidate-fact-text"><a href="mailto:info@shafaqhussain.vote" style="color:var(--text-dark);text-decoration:none;">info@shafaqhussain.vote</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="candidate-card reveal">
+        <img class="candidate-photo"
+          src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&h=400&fit=crop&crop=face"
+          alt="Obaydul Kabir"
+          onerror="this.src='https://via.placeholder.com/600x320/A81E1E/F9F7E8?text=Obaydul+Kabir'">
+        <div class="candidate-body">
+          <div class="candidate-name">Obaydul Kabir</div>
+          <div class="candidate-tag">Your Party Candidate · Small Heath Ward 2026</div>
+          <p class="candidate-bio">
+            A lifelong Small Heath resident, Obaydul has campaigned tirelessly for better inner city services across decades. He has stood against Labour, Tory and Lib Dem cuts and been a vocal advocate for Kashmir, Palestine and against unjust wars. He brings knowledge and experience from public services as a team leader, FE college lecturer and Senior Youth Officer — committed to ensuring Small Heath gets the fair investment it deserves after years of neglect.
+          </p>
+          <div class="candidate-fact">
+            <span class="candidate-fact-icon">📞</span>
+            <span class="candidate-fact-text"><a href="tel:07574077035" style="color:var(--red);text-decoration:none;font-weight:700;">07574 077 035</a></span>
+          </div>
+          <div class="candidate-fact">
+            <span class="candidate-fact-icon">📱</span>
+            <span class="candidate-fact-text">
+              <a href="https://www.tiktok.com/@kabirofficial_immi" target="_blank" style="color:var(--red);text-decoration:none;font-weight:700;">@kabirofficial_immi on TikTok</a>
+            </span>
+          </div>
+          <div class="candidate-fact">
+            <span class="candidate-fact-icon">✉️</span>
+            <span class="candidate-fact-text"><a href="mailto:obaydulkabir@hotmail.com" style="color:var(--text-dark);text-decoration:none;">obaydulkabir@hotmail.com</a></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PLEDGES -->
+<section id="pledges">
+  <div class="section-inner">
+    <div class="section-kicker">Our Commitment</div>
+    <h2 class="section-title">16 Pledges for Small Heath</h2>
+    <div class="pledges-grid">
+      <div class="pledge-item reveal"><div class="pledge-num">01</div><div class="pledge-text">Seek more funding for schools in Small Heath</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">02</div><div class="pledge-text">Help end the bin strike and keep weekly collections running</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">03</div><div class="pledge-text">Build Small Heath as a safer, healthier and economic hub</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">04</div><div class="pledge-text">Secure investment from the Council and WMCA for the Sports Quarter</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">05</div><div class="pledge-text">Ensure funding is distributed fairly and equally across the ward</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">06</div><div class="pledge-text">Help create jobs, training and apprenticeships for residents</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">07</div><div class="pledge-text">Increase youth services, day care and crime prevention initiatives</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">08</div><div class="pledge-text">Work with Council and WMCA on more car parking spaces</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">09</div><div class="pledge-text">Run a campaign to reopen Small Heath Swimming Pool</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">10</div><div class="pledge-text">Bring investment to develop the Small Heath Park House site</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">11</div><div class="pledge-text">Free bus and swimming classes for all under 16 year olds</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">12</div><div class="pledge-text">Expand youth services on streets and parks across the ward</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">13</div><div class="pledge-text">Work with Heartlands Hospital to improve local health services</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">14</div><div class="pledge-text">Support private hire taxis to access bus lanes and bus gates</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">15</div><div class="pledge-text">More cameras and investment to stop fly-tipping across Small Heath</div></div>
+      <div class="pledge-item reveal"><div class="pledge-num">16</div><div class="pledge-text">Lobby Ghamkol Masjid for dedicated women's spaces in the community</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="section-inner">
+    <div class="section-kicker">Why Labour Must Go</div>
+    <h2 class="section-title">Small Heath deserves better</h2>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-card-icon">🗑️</div>
+        <div class="why-card-title">Bin Strike Crisis</div>
+        <div class="why-card-text">Streets swamped with rubbish and rats causing health problems including asthma attacks. The bin strike cost over £17 million — with fly-tipping completely out of control. Labour's poor leadership caused this and still hasn't resolved it.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-card-icon">🏚️</div>
+        <div class="why-card-title">Inner City Neglect</div>
+        <div class="why-card-text">Small Heath Pool closed for 10 years. Park House left to rot. Crime and anti-social behaviour on the rise. Heybarnes Fields and Digby Park received zero investment. Our community has been abandoned while budgets were squandered elsewhere.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-card-icon">💸</div>
+        <div class="why-card-title">Financial Mismanagement</div>
+        <div class="why-card-text">Council declared bankruptcy. Commonwealth Games costs spiralled from £560m to over £800m. Community assets sold cheaply. Essential library, youth and care services cut while commissioners are paid over £1,000 a day.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-card-icon">⚠️</div>
+        <div class="why-card-title">Don't Trust Lib Dems Either</div>
+        <div class="why-card-text">Collaborated with Labour to raise council tax to 24%. Went into coalition with Tories and let communities down. No investment in Small Heath when they held power. Tried and tested politicians who never delivered — don't waste your vote on them.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+  <div class="section-inner">
+    <div class="section-kicker">Watch &amp; Share</div>
+    <h2 class="section-title">Campaign Videos</h2>
+    <p class="tiktok-section-note">
+      Watch Obaydul Kabir&#39;s latest campaign updates from Small Heath. Follow
+      <a href="https://www.tiktok.com/@kabirofficial_immi" target="_blank" style="color:var(--red);font-weight:700;">@kabirofficial_immi</a>
+      on TikTok — download videos and place them in <code style="background:var(--cream-darker);padding:2px 6px;font-size:0.82rem;">public/videos/</code>.
+    </p>
+
+    <div class="video-slider-wrap">
+      <div class="video-slider" id="videoSlider">
+
+        <!--
+          HOW TO ADD YOUR TIKTOK VIDEOS:
+          1. On your phone: open each TikTok → Share → Save video
+             On desktop: use snaptik.app or ssstik.io to download MP4
+          2. Rename files: video1.mp4, video2.mp4, video3.mp4, video4.mp4
+          3. Save a thumbnail screenshot as: video1.jpg, video2.jpg etc.
+          4. In your repo, create folder: public/videos/
+          5. Drop all files in there — Vercel will serve them automatically
+          6. Update the title text in .video-slide-title below
+        -->
+
+        <div class="video-slide" onclick="toggleVideo(this)">
+          <video src="public/videos/video1.mp4" loop playsinline preload="metadata" poster="public/videos/video1.jpg"></video>
+          <div class="video-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="video-slide-overlay">
+            <div class="video-slide-title">Campaign Update · Small Heath</div>
+            <div class="video-slide-tag">@kabirofficial_immi</div>
+          </div>
+        </div>
+
+        <!-- Hi -->
+        <div class="video-slide" onclick="toggleVideo(this)">
+          <video src="public/videos/video2.mp4" loop playsinline preload="metadata" poster="public/videos/video2.jpg"></video>
+          <div class="video-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="video-slide-overlay">
+            <div class="video-slide-title">Community Event · Small Heath Ward</div>
+            <div class="video-slide-tag">@kabirofficial_immi</div>
+          </div>
+        </div>
+
+        <div class="video-slide" onclick="toggleVideo(this)">
+          <video src="public/videos/video3.mp4" loop playsinline preload="metadata" poster="public/videos/video3.jpg"></video>
+          <div class="video-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="video-slide-overlay">
+            <div class="video-slide-title">Our Pledges · Your Party 2026</div>
+            <div class="video-slide-tag">@kabirofficial_immi</div>
+          </div>
+        </div>
+
+        <div class="video-slide" onclick="toggleVideo(this)">
+          <video src="public/videos/video4.mp4" loop playsinline preload="metadata" poster="public/videos/video4.jpg"></video>
+          <div class="video-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="video-slide-overlay">
+            <div class="video-slide-title">Vote 7 May 2026 · Small Heath</div>
+            <div class="video-slide-tag">@kabirofficial_immi</div>
+          </div>
+        </div>
+
+        <div class="video-placeholder">
+          <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.13 8.13 0 0 0 4.77 1.52V6.76a4.85 4.85 0 0 1-1-.07z"/></svg>
+          <p>See all campaign videos, events &amp; updates on TikTok</p>
+          <a href="https://www.tiktok.com/@kabirofficial_immi" target="_blank" rel="noopener">Follow on TikTok &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="slider-nav">
+      <button class="slider-btn" onclick="slideVideos(-1)" aria-label="Previous">&larr;</button>
+      <button class="slider-btn" onclick="slideVideos(1)" aria-label="Next">&rarr;</button>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+
+    <a class="tiktok-cta" href="https://www.tiktok.com/@kabirofficial_immi" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.13 8.13 0 0 0 4.77 1.52V6.76a4.85 4.85 0 0 1-1-.07z"/></svg>
+      Follow @kabirofficial_immi on TikTok
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-kicker">Get Involved</div>
+    <h2 class="section-title">Join the Campaign</h2>
+    <div class="contact-grid">
+
+      <div>
+        <div class="contact-person">
+          <div class="contact-person-name">Shafaq Hussain</div>
+          <div class="contact-detail">
+            <div class="contact-icon-wrap">📞</div>
+            <a href="tel:07300918407">07300 918 407</a>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon-wrap">✉️</div>
+            <a href="mailto:info@shafaqhussain.vote">info@shafaqhussain.vote</a>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon-wrap">🌐</div>
+            <a href="https://www.shafaqhussain.vote" target="_blank">www.shafaqhussain.vote</a>
+          </div>
+        </div>
+        <hr class="contact-divider">
+        <div class="contact-person">
+          <div class="contact-person-name">Obaydul Kabir</div>
+          <div class="contact-detail">
+            <div class="contact-icon-wrap">📞</div>
+            <a href="tel:07574077035">07574 077 035</a>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon-wrap">📱</div>
+            <a href="https://www.tiktok.com/@kabirofficial_immi" target="_blank">@kabirofficial_immi (TikTok)</a>
+          </div>
+        </div>
+        <hr class="contact-divider">
+        <div class="contact-address">
+          <strong style="color:var(--cream);">Campaign Office</strong><br>
+          552A Coventry Road, Small Heath<br>
+          Birmingham B10 0UN<br><br>
+          Promoted by S. Hussain &amp; O. Kabir<br>
+          Printed by Britannia Design &amp; Print, Birmingham B9 4LA<br>
+          Tel: 0121 707 1333
+        </div>
+      </div>
+
+      <div>
+        <p class="wa-form-intro">
+          <strong>Send us a message via WhatsApp.</strong><br>
+          Fill in your details below and click the button — your message will open directly in WhatsApp so we can respond quickly and personally.
+        </p>
+        <div class="form-group">
+          <input type="text" class="form-input" placeholder="Your Full Name *" id="waName">
+        </div>
+        <div class="form-group">
+          <input type="tel" class="form-input" placeholder="Your Phone Number" id="waPhone">
+        </div>
+        <div class="form-group">
+          <select class="form-select" id="waReason">
+            <option value="">How would you like to help?</option>
+            <option value="Volunteer for the campaign">🙋 Volunteer for the campaign</option>
+            <option value="Join the WhatsApp group">💬 Join the WhatsApp group</option>
+            <option value="Request a leaflet / poster">📄 Request a leaflet / poster</option>
+            <option value="Report a local issue">🗺️ Report a local issue</option>
+            <option value="General enquiry">❓ General enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea class="form-textarea" placeholder="Your message or question..." id="waMsg"></textarea>
+        </div>
+        <button class="form-submit-wa" onclick="sendToWhatsApp()">
+          <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          Send via WhatsApp
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Your Party</div>
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#candidates">Candidates</a>
+    <a href="#pledges">Pledges</a>
+    <a href="#why">Why Change</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.tiktok.com/@kabirofficial_immi" target="_blank">TikTok</a>
+  </div>
+  <div class="footer-legal">
+    Promoted by Shafaq Hussain &amp; Obaydul Kabir · 552A Coventry Road, Small Heath, Birmingham B10 0UN<br>
+    Printed by Britannia Design &amp; Print, Birmingham B9 4LA · Tel: 0121 707 1333<br>
+    Your Party is led by Jeremy Corbyn — standing against austerity, racism, and injustice.
+  </div>
+  <div class="footer-vote">Vote 7 May 2026</div>
+</footer>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a class="wa-float" href="https://wa.me/447530786507" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+  </svg>
+</a>
+
+
+<script>
+// Mobile nav
+function toggleMobileNav() {
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+function closeMobileNav() {
+  document.getElementById('mobileNav').classList.remove('open');
+}
+
+// TikTok slider
+// Video slider
+function slideVideos(dir) {
+  var slider = document.getElementById('videoSlider');
+  slider.scrollBy({ left: dir * 316, behavior: 'smooth' });
+  updateDots();
+}
+function updateDots() {
+  var slider = document.getElementById('videoSlider');
+  var slides = slider.querySelectorAll('.video-slide, .video-placeholder');
+  var dots = document.querySelectorAll('.slider-dot');
+  var idx = Math.round(slider.scrollLeft / 316);
+  dots.forEach(function(d, i) { d.classList.toggle('active', i === idx); });
+}
+function toggleVideo(slide) {
+  var video = slide.querySelector('video');
+  if (!video || !video.src || video.src.endsWith('/')) return;
+  // Pause all other videos
+  document.querySelectorAll('.video-slide video').forEach(function(v) {
+    if (v !== video) { v.pause(); v.closest('.video-slide').classList.remove('playing'); }
+  });
+  if (video.paused) { video.play(); slide.classList.add('playing'); }
+  else { video.pause(); slide.classList.remove('playing'); }
+}
+// Build dots on load
+window.addEventListener('load', function() {
+  var slider = document.getElementById('videoSlider');
+  if (!slider) return;
+  var slides = slider.querySelectorAll('.video-slide, .video-placeholder');
+  var dotsWrap = document.getElementById('sliderDots');
+  slides.forEach(function(_, i) {
+    var d = document.createElement('button');
+    d.className = 'slider-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Slide ' + (i+1));
+    d.onclick = function() {
+      slider.scrollTo({ left: i * 316, behavior: 'smooth' });
+      setTimeout(updateDots, 400);
+    };
+    dotsWrap.appendChild(d);
+  });
+  slider.addEventListener('scroll', function() { clearTimeout(slider._t); slider._t = setTimeout(updateDots, 100); });
+});
+
+// WhatsApp form submit
+function sendToWhatsApp() {
+  var name = document.getElementById('waName').value.trim();
+  var phone = document.getElementById('waPhone').value.trim();
+  var reason = document.getElementById('waReason').value;
+  var msg = document.getElementById('waMsg').value.trim();
+
+  if (!name) {
+    alert('Please enter your name before sending.');
+    document.getElementById('waName').focus();
+    return;
+  }
+
+  var lines = [];
+  lines.push('👋 *New Campaign Enquiry*');
+  lines.push('──────────────────');
+  lines.push('*Name:* ' + name);
+  if (phone) lines.push('*Phone:* ' + phone);
+  if (reason) lines.push('*Reason:* ' + reason);
+  if (msg) lines.push('*Message:* ' + msg);
+  lines.push('──────────────────');
+  lines.push('_Sent via shafaqhussain.vote_');
+
+  var waText = encodeURIComponent(lines.join('\n'));
+  var waNumber = '447530786507';
+  var waURL = 'https://wa.me/' + waNumber + '?text=' + waText;
+
+  window.open(waURL, '_blank');
+}
+
+// Reveal on scroll
+var obs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) { e.target.classList.add('visible'); }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(function(el) { obs.observe(el); });
+
+// Pledge stagger
+var pledgeItems = document.querySelectorAll('.pledge-item');
+var pledgeObs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e, i) {
+    if (e.isIntersecting) {
+      setTimeout(function() {
+        e.target.classList.add('visible');
+      }, (Array.from(pledgeItems).indexOf(e.target) % 2) * 100);
+      pledgeObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+pledgeItems.forEach(function(el) { pledgeObs.observe(el); });
+</script>
+</body>
+</html>
